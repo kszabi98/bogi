@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Szerelmemnek!</title>
+		<!-- Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- Scriptek-->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<!-- Saját -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<script>
+		var randomIdezet = Math.floor(Math.random()*20);
+		var randomKep = Math.floor(Math.random()*20);
+		var idezetek = ['"A szeretlek szó nem csak egy érzést jelent. Hanem azt is... hogy próbálok mindent megtenni azért... hogy boldog légy." <p style="text-align: right;">~ Léria Dipán</p>', 
+						'"Nem az számít, ki mit gondol - rólad. Az számít, ki szeret - téged. Nem az a fontos, aki arcával mosolyog csak rád, az a fontos, aki lelkével teszi. Nem az számít, aki mindent tud rólad, az számít, aki szívedet ismeri. Nem az a fontos, aki szemével néz téged, csak az, aki szívével lát. Ne törődj azzal, aki csak kapni akar tőled, azzal foglalkozz, aki adni is akar. Nem az a fontos, aki a hiányt nézi benned, csak az, aki kincseidet látja." <p style="text-align: right;">~ Csitáry-Hock Tamás</p>', 
+						'"A gazdagság nem házakban lakik, nem autókban utazik. Nem nyaralások számában, nem ékszerek súlyában mérik. A gazdagságot nem zárhatod páncélszekrénybe, nem tarthatod bankban. A gazdagság egészen másutt van. Benne. Akit szeretsz, aki szeret. Ez a gazdagság. Ha ő van, akkor már mindened van." <p style="text-align: right;">~ Csitáry-Hock Tamás</p>', 
+						'"Akiket összeköt a végzet, mindig megtalálják egymást." <p style="text-align: right;">~ Vaják c. film</p>', 
+						'"Szeretem, hogy fázol, amikor 35 fok meleg van. Szeretem, hogy egy óráig tart, amíg rendelsz egy szendvicset. Szeretem azt a ráncot az orrod felett, amikor úgy nézel rám, mint egy hülyére. Szeretem, hogy miután veled voltam, egy napig érzem a parfümödet a ruhámon. És szeretem, hogy te vagy az egyetlen, akivel beszélni akarok, mielőtt elaludnék éjszaka. (...) Ha az ember rájön, kivel szeretné leélni a maradék életét, akkor azt a maradék életet szeretné minél előbb elkezdeni." <p style="text-align: right;">~ Harry és Sally c. film</p>', 
+						'"Úgy látom őt magam előtt, mint egy prizmát, amelybe belefut a napfény, aztán színeire bontva szétszóródik. Minden, ami előtte történt velem, azért volt, hogy vele találkozzak, s minden, ami együtt történt velünk, az egész további életemet meghatározza." <p style="text-align: right;">~ Sterczer Hilda</p>', 
+						'"A szerelem olyan, mint egy illat, egy áramlat, egy zivatar. Te vagy az én egem, a rám hulló esőcseppek, én pedig a föld, amely befogad." <p style="text-align: right;">~ Frida Kahlo</p>', 
+						'"El sem tudom képzelni, hogy ennél jobban tudnálak szeretni. De tegnap is így éreztem, tegnapelőtt is és tegnapelőtt előtt is." <p style="text-align: right;">~ Agymenők c. film</p>', 
+						'"A szerelem nem a gyávák játéka." <p style="text-align: right;">~ Marianne Williamson</p>',
+						'"Nem tudjuk kimondani. Szerelmes vagyok, nem eszem, nem alszom, elvarázsolt állapotban élek, szárnyalok a boldogságtól, öngyilkos akarok lenni, megszépülök, lefogyok, olyan vagyok, mint egy őrült - s azt mondom a kedvesemnek: "Szeretlek!"... Mi ez?! ...Mi az, hogy "szeretlek"? Hol van ez a szó, ahhoz képest, amit élek? Sehol! Méltatlan a valósághoz! ...Nem kellett volna kimondani! Nem kevesebbet mondtam vele, hanem valami egészen mást! Semmit. Azt kellett volna mondani, hogy őrült vagyok, benned akarok élni, fáj, ha nem látlak, félek tőled, egyszerre vagyok kétségbeesett, alázatos, hatalmas, rémült, boldog, nyomorult... A sejtjeim szomjaznak rád... Azonnal meg akarok halni, és örökké akarok élni veled!... De hol jön ehhez a szó, hogy "szeretlek"?!... Ami a lélekben egy egész világ, az kimondva egy kopott, értéktelen jel. És ez minden nagy élményünkkel így van. Elmondhatatlanok." <p style="text-align: right;">~ Müller Péter</p>', 
+						'"Nem azért szeret az ember valakit, mert az tökéletes. (...) Annak ellenére szereti, hogy nem az." <p style="text-align: right;">~ Jodi Lynn Picoult</p>', 
+						'"Csak te hiányzol változatlanul, végérvényesen, mert még mindig szeretlek és ez a folytonosság csak megerősít érzelmemben." <p style="text-align: right;">~ Oravecz Imre</p>', 
+						'"A szerelem azt jelenti... hogy képes vagy várni." <p style="text-align: right;">~ Meg Cabot</p>', 
+						'"Ennyi csak, mi tudható: szeretni kell, és szeretve lenni jó." <p style="text-align: right;">~ Moulin Rouge c. film</p>', 
+						'"Ha két ember összetartozik, végül egymásra találnak, ha minden összeesküszik is ellenük." <p style="text-align: right;">~ Nora Roberts</p>', 
+						'"A szeretet lényege az együtt. A veled. A velünk." <p style="text-align: right;">~ Müller Péter</p>', 
+						'"Szeretni valakit, az több, mint egy erős érzés - az döntés, ítélet és ígéret." <p style="text-align: right;">~ Erich Fromm</p>', 
+						'"A világ teljesen üres, ha nincs benne szerelem, ha nincs, aki a nevedet kiáltsa, ha nincs, aki hazahívjon." <p style="text-align: right;">~ Stephen King</p>', 
+						'"Az igazi szerelem ott kezdődik, amikor bizonyítani kell, hogy mindenre képes vagy a másikért." <p style="text-align: right;">~ Szilvási Lajos</p>', 
+						'"A szerelemről nem kell beszélni, mert a szerelemnek megvan a saját hangja, és magától beszél." <p style="text-align: right;">~ Paulo Coelho</p>'];
+		var kepek = ['<img class="card-img-top" src="kepek/1.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/2.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/3.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/4.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/5.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/6.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/7.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/8.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/9.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/10.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/11.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/12.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/13.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/14.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/15.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/16.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/17.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/18.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/19.jpg" alt="Card image cap">',
+					'<img class="card-img-top" src="kepek/20.jpg" alt="Card image cap">',]
+		function getKarya(){
+			document.getElementById("idezet").innerHTML = idezetek[Math.floor(Math.random()*20)];
+			document.getElementById("kep").innerHTML = kepek[Math.floor(Math.random()*20)];
+		}				
+	</script>
+	<body onload="getKarya()">
+	<div id="cimhatter"">
+		<h2 id="cim"><b>Boldog valentín napot szerelmem!</b></h2>
+		<i class="fa fa-camera-retro fa-2x" onclick="document.getElementById('kep').innerHTML = kepek[Math.floor(Math.random()*20)];"></i>
+		<i class="fa fa-random fa-2x" onclick="getKarya()"></i>
+		<i class="fa fa-pencil fa-2x" onclick="document.getElementById('idezet').innerHTML = idezetek[Math.floor(Math.random()*20)];"></i>
+	</div>
+		<div class="card kartya" style="width: 40rem;">
+		  <a id="kep"></a>
+		  <div class="card-body idezet-doboz">
+			<p class="card-text" id="idezet"></p>
+		  </div>
+		</div>
+	<div id="labcimhatter">
+		<h2 id="cim"><b>Örökké!</b></h2>
+		<h2 id="cim"><b>Szabi + Bogi</b></h2>
+	</div>
+	</body>
+</html>
